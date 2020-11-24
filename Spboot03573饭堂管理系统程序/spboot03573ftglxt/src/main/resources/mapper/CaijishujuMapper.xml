@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.CaijishujuMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Caijishuju">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="xueshengxinxi" property="xueshengxinxi" jdbcType="INTEGER"/>
+                                    <result column="xuehao" property="xuehao" jdbcType="VARCHAR"/>
+                                    <result column="xingming" property="xingming" jdbcType="VARCHAR"/>
+                                    <result column="tiwen" property="tiwen" jdbcType="VARCHAR"/>
+                                    <result column="shifoufashao" property="shifoufashao" jdbcType="VARCHAR"/>
+                                    <result column="caijishijian" property="caijishijian" jdbcType="VARCHAR"/>
+                                    <result column="caijididian" property="caijididian" jdbcType="VARCHAR"/>
+                                    <result column="huanjingrenshu" property="huanjingrenshu" jdbcType="INTEGER"/>
+                                    <result column="shiwaiwendu" property="shiwaiwendu" jdbcType="VARCHAR"/>
+                                    <result column="shidu" property="shidu" jdbcType="VARCHAR"/>
+                                    <result column="beizhu" property="beizhu" jdbcType="VARCHAR"/>
+                                                <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+            </resultMap>
+    <sql id="Base_Column_List">
+        id, xueshengxinxi, xuehao, xingming, tiwen, shifoufashao, caijishijian, caijididian, huanjingrenshu, shiwaiwendu, shidu, beizhu, addtime    </sql>
+    </mapper>

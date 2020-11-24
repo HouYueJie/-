@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.dao.ShangpinxinxiMapper">
+    <resultMap id="BaseResultMap" type="com.spring.entity.Shangpinxinxi">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+                            <result column="shangpinbianhao" property="shangpinbianhao" jdbcType="VARCHAR"/>
+                                    <result column="shangpinmingcheng" property="shangpinmingcheng" jdbcType="VARCHAR"/>
+                                    <result column="shangpinbiaoti" property="shangpinbiaoti" jdbcType="VARCHAR"/>
+                                    <result column="leimu" property="leimu" jdbcType="VARCHAR"/>
+                                    <result column="shangpinzhutu" property="shangpinzhutu" jdbcType="VARCHAR"/>
+                                    <result column="shangpinxiangce" property="shangpinxiangce" jdbcType="VARCHAR"/>
+                                    <result column="shichangjia" property="shichangjia" jdbcType="DECIMAL"/>
+                                    <result column="shoujia" property="shoujia" jdbcType="DECIMAL"/>
+                                    <result column="gonghuojia" property="gonghuojia" jdbcType="DECIMAL"/>
+                                    <result column="chanpinxinghao" property="chanpinxinghao" jdbcType="VARCHAR"/>
+                                    <result column="chanpinguige" property="chanpinguige" jdbcType="VARCHAR"/>
+                                    <result column="baozhiqi" property="baozhiqi" jdbcType="VARCHAR"/>
+                                    <result column="shangpinkucun" property="shangpinkucun" jdbcType="INTEGER"/>
+                                    <result column="shangpinzhuangtai" property="shangpinzhuangtai" jdbcType="VARCHAR"/>
+                                    <result column="shangpincanshu" property="shangpincanshu" jdbcType="VARCHAR"/>
+                                    <result column="shangpinxiangqing" property="shangpinxiangqing" jdbcType="VARCHAR"/>
+                                                <result column="addtime" property="addtime" jdbcType="VARCHAR"/>
+            </resultMap>
+    <sql id="Base_Column_List">
+        id, shangpinbianhao, shangpinmingcheng, shangpinbiaoti, leimu, shangpinzhutu, shangpinxiangce, shichangjia, shoujia, gonghuojia, chanpinxinghao, chanpinguige, baozhiqi, shangpinkucun, shangpinzhuangtai, shangpincanshu, shangpinxiangqing, addtime    </sql>
+    </mapper>

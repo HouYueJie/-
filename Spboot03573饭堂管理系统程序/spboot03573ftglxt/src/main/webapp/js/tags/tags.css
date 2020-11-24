@@ -1,0 +1,42 @@
+.tags_input{
+    min-height: 24px;
+    padding: 3px 10px;
+    border: 1px solid #afafaf;
+    border-radius: 10px;
+    outline: none;
+    transition: border-bottom-color,border-left-color,border-right-color,border-top-color .2s;
+}
+.tags_input:focus{
+    border: 1px solid #0b0b0b;
+}
+.tags_input .tagsbox{
+    display: inline-block;
+    padding: 0px 5px;
+    margin-right: 10px;
+    background: #0c6c27;
+    color: #ffffff;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.tags_input input.tags_input_key{
+    border: none;
+    outline: none;
+}
+.tags_input span{
+    cursor: pointer;
+    font-size: 12px;
+}
+.tags_input span.close:after{
+    content: ' x';
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 14px;
+}
+.tags_input .tags_value{
+    width: 0px;
+    overflow: hidden;
+    border: none;
+}
